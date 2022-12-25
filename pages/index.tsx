@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 
 import Nav from "../Comps/Nav";
 import Homes from "../Comps/Home";
@@ -14,7 +15,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Portfolio</title>
-        <script src='/function.js' async/>
+        {/* <Script src='/function.js' strategy="lazyOnload"/> */}
         <link
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
@@ -29,6 +30,7 @@ export default function Home() {
         <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js' defer></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' defer></script>
       </Head>
+      <Script src='/function.js' strategy="lazyOnload"/>
       <Nav />
       <Homes />
       <About />
