@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Portfolio</title>
-        <script src='/function.js' defer/>
+        <script src='/function.js' async/>
         <link
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
