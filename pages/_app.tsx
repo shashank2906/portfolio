@@ -7,7 +7,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
     <Head>
-    <Script src='/function.js' />
     </Head>
     <Component {...pageProps} />
     </>
