@@ -9,7 +9,7 @@ export default function About() {
             <h2 className='title'>About me</h2>
             <div className='about-content'>
               <div className='column left'>
-                <Image src="/me.jpeg" alt="" width={100} height={100}/>
+                <Image src="/me.jpeg" alt="" width={400} height={400}/>
               </div>
               <div className='column right'>
                 <div className='text'>

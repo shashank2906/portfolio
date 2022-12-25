@@ -172,13 +172,26 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
 }
 .home .max-width{
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .home .max-width .row{
   margin-right: 0;
+  /* align-self: center; */
+
+}
+
+.home .home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .home .home-content .text-1{
     font-size: 27px;
@@ -203,6 +216,7 @@ section .title::after{
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
+    margin-bottom: 30px;
     font-weight: 400;
     border-radius: 6px;
     border: 2px solid #B22222;
