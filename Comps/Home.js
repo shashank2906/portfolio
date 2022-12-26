@@ -12,7 +12,7 @@ export default function Home() {
               And I'm a <span className='typing'></span>
             </div>
             <div className='connect-btn'>
-              <a href='/#contact'>Connect</a>{' '}
+              <a href='/#connect'>Connect</a>{' '}
             </div>
 
             <div className='icon-className'>

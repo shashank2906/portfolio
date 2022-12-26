@@ -725,6 +725,13 @@ footer span a:hover {
   .skills .skills-content .left .text {
     font-size: 19px;
   }
+  .about .about-content .left img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid black;
+  }
   .contact .right form .fields {
     flex-direction: column;
   }
