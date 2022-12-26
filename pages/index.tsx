@@ -4,11 +4,11 @@ import Script from 'next/script';
 import Nav from "../Comps/Nav";
 import Homes from "../Comps/Home";
 import About from "../Comps/About";
-import Work from "../Comps/Work";
+import Project from "../Comps/Project";
 import Skill from "../Comps/Skill";
-import Project from "../Comps/Project"
 import Connect from "../Comps/connect";
 import Footer from "../Comps/Footer";
+import Info from "../Comps/Info";
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
       <Nav />
       <Homes />
       <About />
-      <Work />
+      <Info />
       <Skill />
       <Project />
       <Connect />

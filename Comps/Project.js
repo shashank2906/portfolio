@@ -1,57 +1,51 @@
-import React from 'react'
+import React from 'react';
 
-export default function Project() {
+export default function Work() {
   return (
     <div>
-        <section class="teams" id="teams">
-        <div class="max-width">
-            <h2 class="title">Projects</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <a href="./portfolio.html" target="_blank">
-                    <div class="box">
-                        
-                        {/* <img src="images/imgx1.jpeg" alt=""> */}
-                        <div class="text">PORTFOLIO</div>
-                        <p class="para-text">Portfolio website made using Html CSS Vanilla JS</p>
-                        
-                    </div>
-                    </a> 
-                </div>
-
-                <div class="card">
-                    <a href="./coindesk.html" target="_blank">
-                    <div class="box">
-                        {/* <img src="images/imgx2.jpeg" alt=""> */}
-                        <div class="text">COIN-DESK</div>
-                        <p class="para-text">Live cryptocurrencies tracking web app</p>
-                    </div>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <a href="./bragcord.html" target="_blank">
-                    <div class="box">
-                        {/* <img src="images/imgx3.jpeg" alt=""> */}
-                        <div class="text">BRAG-CORD</div>
-                        <p class="para-text">Chat app made using React JS and React-router </p>
-                    </div>
-                    </a>
-                </div>
-                
-                <div class="card">
-                    <a href="./memories.html" target="_blank">
-                    <div class="box">
-                        {/* <img src="images/imgx4.jpeg" alt=""> */}
-                        
-                        <div class="text">MEMORIES</div>
-                        <p class="para-text">Social media app made using react</p>
-                    </div>
-                    </a>
-                </div>
+      <section className='services' id='project'>
+        <div className='max-width'>
+          <h2 className='title'>Projects</h2>
+          <div className='serv-content'>
+            <div className='card'>
+              <div className='box'>
+                <a href='./portfolio.html'>
+                  <i className='fas fa-portrait'></i>
+                  <div className='text'>PORTFOLIO</div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Rem quia sunt, quasi quo illo enim.
+                  </p>
+                </a>
+              </div>
             </div>
+            <div className='card'>
+              <div className='box'>
+                <a href='./coindesk.html'>
+                  <i className='fas fa-chart-line'></i>
+                  <div className='text'>COIN-DESK</div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Rem quia sunt, quasi quo illo enim.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div className='card'>
+              <div className='box'>
+                <a href='./bragcord.html'>
+                  <i className='fas fa-comment-dots'></i>
+                  <div className='text'>BRAG-CORD</div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Rem quia sunt, quasi quo illo enim.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     </div>
-  )
+  );
 }
