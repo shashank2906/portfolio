@@ -35,3 +35,23 @@ export default function About() {
     </div>
   );
 }
+
+
+
+
+// export async function getStaticProps() {
+//   const client = createClient({   
+//     projectId: 'tueg170a',
+//     dataset: 'production',
+//     useCdn: true,
+//   });
+
+//   const query = '*[_type == "about"]';
+//   const about = await client.fetch(query);
+
+//   return {
+//     props: {
+//       about,
+//     }
+//   };
+// }
