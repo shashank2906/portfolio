@@ -3,12 +3,12 @@ import React from 'react';
 export default function connect() {
   return (
     <div>
-      <section class='contact' id='connect'>
-        <div class='max-width'>
-          <h2 class='title'>Connect</h2>
-          <div class='contact-content'>
-            <div class='column left'>
-              <div class='text'>Get in Touch</div>
+      <section className='contact' id='connect'>
+        <div className='max-width'>
+          <h2 className='title'>Connect</h2>
+          <div className='contact-content'>
+            <div className='column left'>
+              <div className='text'>Get in Touch</div>
               <p>
                 Lets connect!
                 <br />
@@ -20,35 +20,35 @@ export default function connect() {
                 conversation begin! I would love to get connected with you
                 through the social media! Let’s get in touch on,
               </p>
-              <div class='icons'>
-                <div class='row'>
-                  <i class='fas fa-user'></i>
-                  <div class='info'>
-                    <div class='head'>Name</div>
-                    <div class='sub-title'>Shashank Rai</div>
+              <div className='icons'>
+                <div className='row'>
+                  <i className='fas fa-user'></i>
+                  <div className='info'>
+                    <div className='head'>Name</div>
+                    <div className='sub-title'>Shashank Rai</div>
                   </div>
                 </div>
-                <div class='row'>
-                  <i class='fas fa-map-marker-alt'></i>
-                  <div class='info'>
-                    <div class='head'>Address</div>
-                    <div class='sub-title'>Gwalior (Madhya Pradesh)</div>
+                <div className='row'>
+                  <i className='fas fa-map-marker-alt'></i>
+                  <div className='info'>
+                    <div className='head'>Address</div>
+                    <div className='sub-title'>Gwalior (Madhya Pradesh)</div>
                   </div>
                 </div>
-                <div class='row'>
-                  <i class='fas fa-envelope'></i>
-                  <div class='info'>
-                    <div class='head'>Email</div>
-                    <div class='sub-title'>shashank.rai00331@gmail.com</div>
+                <div className='row'>
+                  <i className='fas fa-envelope'></i>
+                  <div className='info'>
+                    <div className='head'>Email</div>
+                    <div className='sub-title'>shashank.rai00331@gmail.com</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class='column right'>
-              <div class='text'>Message me</div>
+            <div className='column right'>
+              <div className='text'>Message me</div>
               <form action='/contact' method='post'>
-                <div class='fields'>
-                  <div class='field name'>
+                <div className='fields'>
+                  <div className='field name'>
                     <input
                       type='text'
                       name='name'
@@ -56,7 +56,7 @@ export default function connect() {
                       required
                     />
                   </div>
-                  <div class='field email'>
+                  <div className='field email'>
                     <input
                       type='email'
                       placeholder='Email'
@@ -65,7 +65,7 @@ export default function connect() {
                     />
                   </div>
                 </div>
-                <div class='field'>
+                <div className='field'>
                   <input
                     type='text'
                     placeholder='Subject'
@@ -73,7 +73,7 @@ export default function connect() {
                     required
                   />
                 </div>
-                <div class='field textarea'>
+                <div className='field textarea'>
                   <textarea
                     cols='30'
                     rows='10'
@@ -82,7 +82,7 @@ export default function connect() {
                     required
                   ></textarea>
                 </div>
-                <div class='button-area'>
+                <div className='button-area'>
                   <button type='submit'>Send message</button>
                 </div>
               </form>

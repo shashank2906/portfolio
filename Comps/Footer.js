@@ -6,7 +6,7 @@ export default function Footer() {
       <footer id='footer'>
         <span>
           Created By <a>Shashank Rai</a> |{' '}
-          <span class='far fa-copyright'></span> 2020 All rights reserved.
+          <span className='far fa-copyright'></span> 2020 All rights reserved.
         </span>
       </footer>
     </div>
