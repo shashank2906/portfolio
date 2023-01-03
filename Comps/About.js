@@ -1,7 +1,41 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import axios from 'axios';
 
 export default function About() {
+  const [data, setData] = useState();
+  const [para1, setPara1] = useState();
+  const [para2, setPara2] = useState();
+  const [para3, setPara3] = useState();
+
+  useEffect(() => {
+    (async function () {
+      const res = await axios.get('http://localhost:3000/api/fetchAbout');
+      // console.log(res.data.about[0].name);
+      setData(res.data.about[0].name);
+    })();
+  }, []);
+
+  useEffect(() => {
+    console.log(data);
+    // setPara1(data.slice(0, data?.indexOf('I am a Full')));
+    // setPara2(
+    //   data.slice(
+    //     data?.indexOf('I am a Full'),
+    //     data?.indexOf('I Am a Self-taught')
+    //   )
+    // );
+    // setPara3(data.slice(0, data?.indexOf('I am a Full')));
+    setPara1(data?.slice(0, data?.indexOf('I am a Full')));
+    setPara2(
+      data?.slice(
+        data?.indexOf('I am a Full'),
+        data?.indexOf('I Am a Self-taught')
+      )
+    );
+    setPara3(data?.slice(data?.indexOf('I Am a Self-taught')));
+  }, [data]);
+
   return (
     <div>
       <section className='about' id='about'>
@@ -16,16 +50,12 @@ export default function About() {
                 I'm Shashank and I'm a <span className='typing-2'></span>
               </div>
               <p>
-                "Innovation optimised solution seeker, excited to be at the
-                develpment phase of my career as a software engineer"
+                {para1}
                 <br />
-                I am a Full Stack Web Developer and an undergrad student
-                pursuing Bachelor of Technology in Electrical and Electronics
-                Engineering @ MITS (gwalior)
+                {para2}
                 <br />
-                <br />I Am a Self-taught programmer capable of mastering new
-                technologies, seeking an opportunity in an esteemed organization
-                to utilize my skills to build products that provide value.
+                <br />
+                {para3}
               </p>
               <a href='/download'>Download CV</a>
             </div>
@@ -35,23 +65,3 @@ export default function About() {
     </div>
   );
 }
-
-
-
-
-// export async function getStaticProps() {
-//   const client = createClient({   
-//     projectId: 'tueg170a',
-//     dataset: 'production',
-//     useCdn: true,
-//   });
-
-//   const query = '*[_type == "about"]';
-//   const about = await client.fetch(query);
-
-//   return {
-//     props: {
-//       about,
-//     }
-//   };
-// }
